@@ -13,14 +13,14 @@ import {
   ReactJS
 } from './styles';
 
-const Header = () => (
+const Header = scrollt => (
   <Container>
     <MenuBar>
-      <MenuButton>
+      <MenuButton onClick={() => scrollt()}>
         <MenuLabel>Sobre</MenuLabel>
       </MenuButton>
       <MenuButton>
-        <MenuLabel>Projetos</MenuLabel>
+        <MenuLabel>Portfólio</MenuLabel>
       </MenuButton>
       <MenuButton>
         <MenuLabel>Contato</MenuLabel>

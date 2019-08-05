@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from 'styled-components';
+import styled, { css } from 'styled-components';
 import { ReactLogo } from 'styled-icons/fa-brands/ReactLogo';
 import img from '../../../../images/about/me.jpg';
 import svgNodeJS from '../../../../images/about/nodejs.svg';
@@ -7,21 +7,17 @@ import svgReduxSaga from '../../../../images/about/redux-saga.svg';
 import svgGraphQL from '../../../../images/about/graphql.svg';
 import svgMongoDB from '../../../../images/about/mongodb.svg';
 
-const animateScale = keyframes`
-  from {
-    transform: scale(1);
-  }
-  to{
-    transform: scale(1.1);
-  }
+const animateScale = css`
+  transform: scale(1.1);
 `;
 
 const iconsStyle = css`
   width: 60px;
   height: 60px;
+  transition: transform 0.2s linear;
 
   &:hover {
-    animation: ${animateScale} 0.2s linear forwards;
+    ${animateScale}
   }
 `;
 
@@ -49,9 +45,10 @@ export const UserImg = styled.img.attrs({
   width: 150px;
   border-radius: 50%;
   box-shadow: 3px 10px 30px 2px rgba(0, 0, 0, 0.28);
+  transition: transform 0.2s linear;
 
   &:hover {
-    animation: ${animateScale} 0.2s linear forwards;
+    ${animateScale}
   }
 `;
 

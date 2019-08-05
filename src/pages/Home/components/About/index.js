@@ -17,7 +17,7 @@ import {
 } from './styles';
 
 const About = () => (
-  <Container>
+  <Container key="about">
     <Header>
       <UserImg />
       <UserName>Henrique Hermes</UserName>

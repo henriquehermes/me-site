@@ -97,6 +97,7 @@ export const MenuButton = styled.button`
   border-radius: 12px;
   border: 1px #fff solid;
   color: #fff;
+  transition: all 0.2s linear;
 
   &:hover {
     background: #fff;
