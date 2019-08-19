@@ -19,7 +19,7 @@ import {
 const About = () => (
   <Container key="about">
     <Header>
-      <UserImg />
+      <UserImg src="https://i.ibb.co/Ks8dkrk/me.jpg" />
       <UserName>Henrique Hermes</UserName>
       <UserDescription>
         Lorem ipsum vehicula integer ornare pellentesque scelerisque pretium dui, hac aenean conubia

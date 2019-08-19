@@ -1,7 +1,6 @@
 import styled, { css, keyframes } from 'styled-components';
 import { Node } from 'styled-icons/fa-brands/Node';
 import { ReactLogo } from 'styled-icons/fa-brands/ReactLogo';
-import img from '../../../../images/header/clouds.jpg';
 
 const iconsStyle = css`
   width: 50px;
@@ -26,7 +25,7 @@ export const Container = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-image: url(${img});
+  background-image: url('https://i.ibb.co/W6HSgWh/clouds.jpg');
   background-repeat: no-repeat;
 `;
 

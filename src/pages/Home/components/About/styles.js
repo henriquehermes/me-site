@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
 import { ReactLogo } from 'styled-icons/fa-brands/ReactLogo';
-import img from '../../../../images/about/me.jpg';
 import svgNodeJS from '../../../../images/about/nodejs.svg';
 import svgRedux from '../../../../images/about/redux.svg';
 import svgReduxSaga from '../../../../images/about/redux-saga.svg';
@@ -38,9 +37,7 @@ export const Header = styled.div`
   align-items: center;
 `;
 
-export const UserImg = styled.img.attrs({
-  src: img
-})`
+export const UserImg = styled.img`
   height: 150px;
   width: 150px;
   border-radius: 50%;
